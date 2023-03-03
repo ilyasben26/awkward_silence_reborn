@@ -73,7 +73,6 @@ class _ResetButtonState extends State<ResetButton> {
 
                   widget.controller.reverse().then((value) {
                     setState(() {
-                      print(scale);
                       scale = 1;
                       turns += 1;
                     });

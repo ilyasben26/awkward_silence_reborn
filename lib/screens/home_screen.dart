@@ -19,6 +19,9 @@ class _HomeScreenState extends State<HomeScreen>
   late Animation<double> _animation =
       CurvedAnimation(parent: _controller, curve: Curves.easeIn);
 
+  bool _isInit = true;
+  bool _isLoading = false;
+
   @override
   void initState() {
     super.initState();
@@ -31,7 +34,18 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   void didChangeDependencies() {
-    Provider.of<Prompts>(context).setPromptsFromJson();
+    if (_isInit) {
+      setState(() {
+        _isLoading = true;
+      });
+      Provider.of<Prompts>(context).setPromptsFromJson().then((_) {
+        setState(() {
+          _isLoading = false;
+        });
+      });
+    }
+    _isInit = false;
+
     super.didChangeDependencies();
   }
 
@@ -72,7 +86,9 @@ class _HomeScreenState extends State<HomeScreen>
               controller: _controller,
             ),
             const Spacer(),
-            ResetButton(controller: _controller),
+            _isLoading
+                ? SizedBox.shrink()
+                : ResetButton(controller: _controller),
           ],
         )),
       ),
