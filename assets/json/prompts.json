@@ -7,6 +7,10 @@
         {
             "text": "If you could have a conversation with your past self, what advice would you give?",
             "category": "question"
+        },
+        {
+            "text": "This is a test :)",
+            "category": "question"
         }
     ]
 }

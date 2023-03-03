@@ -19,8 +19,6 @@ class _HomeScreenState extends State<HomeScreen>
   late Animation<double> _animation =
       CurvedAnimation(parent: _controller, curve: Curves.easeIn);
 
-  bool _flag = true;
-
   @override
   void initState() {
     super.initState();
@@ -29,6 +27,12 @@ class _HomeScreenState extends State<HomeScreen>
       duration: const Duration(seconds: 1),
       vsync: this,
     );
+  }
+
+  @override
+  void didChangeDependencies() {
+    Provider.of<Prompts>(context).setPromptsFromJson();
+    super.didChangeDependencies();
   }
 
   @override
@@ -64,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen>
           children: [
             const Spacer(),
             PromptCard(
-              prompt: promptData.randPrompt,
+              prompt: promptData.randPrompt.text,
               controller: _controller,
             ),
             const Spacer(),
