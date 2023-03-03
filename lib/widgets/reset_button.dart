@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
+import 'package:glassmorphism/glassmorphism.dart';
 
 import '../providers/prompts.dart';
 
@@ -84,16 +85,39 @@ class _ResetButtonState extends State<ResetButton> {
                         }));
                   });
                 },
-          child: Container(
+          child: GlassmorphicContainer(
             height: 100,
             width: 100,
-            decoration: const BoxDecoration(
-                color: Colors.white, shape: BoxShape.circle),
+            borderRadius: 200,
+            blur: 6.5,
+            shape: BoxShape.circle,
+            border: 2,
+            linearGradient: LinearGradient(
+              colors: [
+                Color(0xFFffffff).withOpacity(0.5),
+                Color(0xFFFFFFFF).withOpacity(0.1),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            borderGradient: LinearGradient(
+              colors: [
+                Color(0xFFffffff).withOpacity(0.5),
+                Color(0xFFFFFFFF).withOpacity(0.01),
+              ],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+            ),
+            // decoration: const BoxDecoration(
+            //     color: Colors.white, shape: BoxShape.circle),
             child: AnimatedRotation(
               turns: turns,
               duration: Duration(seconds: 1),
               child: Center(
-                child: SvgPicture.asset('assets/svgs/arrow_circular.svg'),
+                child: SvgPicture.asset(
+                  'assets/svgs/arrow_circular.svg',
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
