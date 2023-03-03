@@ -1,5 +1,6 @@
 import 'package:awkward_silence_reborn/providers/prompts.dart';
 import 'package:awkward_silence_reborn/widgets/prompt_card.dart';
+import 'package:awkward_silence_reborn/widgets/reset_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -62,35 +63,12 @@ class _HomeScreenState extends State<HomeScreen>
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Spacer(),
-            //PromptCard(promptData.randPrompt),
-            FadeTransition(
-                opacity: _animation, child: PromptCard(promptData.randPrompt)),
-            Animate(
+            PromptCard(
+              prompt: promptData.randPrompt,
               controller: _controller,
-              effects: const [
-                FlipEffect(
-                    duration: Duration(seconds: 1), curve: Curves.easeOut),
-                ScaleEffect(
-                    begin: Offset(0.8, 0.8),
-                    curve: Curves.easeIn,
-                    duration: Duration(seconds: 1))
-              ],
-              child: PromptCard(promptData.randPrompt),
             ),
             const Spacer(),
-            Container(
-              margin: EdgeInsets.only(bottom: 150),
-              child: CupertinoButton.filled(
-                  onPressed: () {
-                    _controller.reverse().then((value) {
-                      promptData.setRandPrompt();
-                      _controller.forward();
-                    });
-
-                    //_controller.reverse();
-                  },
-                  child: Text('New')),
-            ),
+            ResetButton(controller: _controller),
           ],
         )),
       ),
