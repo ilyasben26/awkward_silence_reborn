@@ -1,7 +1,35 @@
 {
     "prompts": [
         {
+            "text": "What's the best advice you've ever received?",
+            "category": "question"
+        },
+        {
             "text": "What's something that you've always wanted to try but haven't had the chance to yet?",
+            "category": "question"
+        },
+        {
+            "text": "What's the most challenging thing you've ever done?",
+            "category": "question"
+        },
+        {
+            "text": "Have you ever had a dream that was so weird it stayed with you all day?",
+            "category": "question"
+        },
+        {
+            "text": "What's the most bizarre thing you've ever witnessed?",
+            "category": "question"
+        },
+        {
+            "text": "What is the meaning of life?",
+            "category": "question"
+        },
+        {
+            "text": "If you could create your own utopia, what would it look like?",
+            "category": "question"
+        },
+        {
+            "text": "If you could create a new holiday, what would it be and what would it celebrate?",
             "category": "question"
         },
         {
@@ -9,8 +37,36 @@
             "category": "question"
         },
         {
-            "text": "This is a test :)",
+            "text": "What's the most interesting place you've ever visited?",
             "category": "question"
+        },
+        {
+            "text": "What's the most adventurous thing you've ever done?",
+            "category": "question"
+        },
+        {
+            "text": "Hey, I couldn't help but notice your [accessory or clothing item]. It looks really cool. Where did you get it?",
+            "category": "openers"
+        },
+        {
+            "text": "Hi, I need your opinion on something. Do you think it's better to go out or stay in on a Saturday night?",
+            "category": "openers"
+        },
+        {
+            "text": "Hey, I noticed you're reading [book title]. I've been meaning to read that. Is it any good?",
+            "category": "openers"
+        },
+        {
+            "text": "Excuse me, I'm trying to settle a bet with my friend. Do you think [controversial question] or [alternative]?",
+            "category": "openers"
+        },
+        {
+            "text": "Excuse me, I'm having an existential crisis and I need someone to talk to. Do you have a minute?",
+            "category": "openers"
+        },
+        {
+            "text": "Hey, I'm on a mission to meet the most interesting people in this room, and I think I just found one. Can I buy you a drink and hear your story?",
+            "category": "openers"
         }
     ]
 }
