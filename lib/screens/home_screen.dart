@@ -1,10 +1,9 @@
 import 'package:awkward_silence_reborn/providers/prompts.dart';
 import 'package:awkward_silence_reborn/widgets/prompt_card.dart';
 import 'package:awkward_silence_reborn/widgets/reset_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
+import '../constants/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -69,8 +68,8 @@ class _HomeScreenState extends State<HomeScreen>
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              Theme.of(context).primaryColor,
-              Theme.of(context).accentColor,
+              gradientColor1,
+              gradientColor2,
             ],
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
