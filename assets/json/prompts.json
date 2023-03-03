@@ -1,0 +1,12 @@
+{
+    "prompts": [
+        {
+            "text": "What's something that you've always wanted to try but haven't had the chance to yet?",
+            "category": "question"
+        },
+        {
+            "text": "If you could have a conversation with your past self, what advice would you give?",
+            "category": "question"
+        }
+    ]
+}

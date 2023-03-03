@@ -17,7 +17,8 @@ class _PromptCardState extends State<PromptCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10),
+      //margin: EdgeInsets.symmetric(horizontal: 20),
+      padding: EdgeInsets.symmetric(horizontal: 20),
       child: Animate(
         controller: widget.controller,
         effects: const [

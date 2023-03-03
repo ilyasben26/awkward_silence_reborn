@@ -39,7 +39,6 @@ class _ResetButtonState extends State<ResetButton> {
                   setState(() {
                     scale = 1.3;
                   });
-                  print('OnTapDown');
                 },
           onTapCancel: _isLoading
               ? null
@@ -54,7 +53,6 @@ class _ResetButtonState extends State<ResetButton> {
                   setState(() {
                     scale = 1;
                   });
-                  print('onTapUp');
                 },
           onPanEnd: _isLoading
               ? null
@@ -62,7 +60,6 @@ class _ResetButtonState extends State<ResetButton> {
                   setState(() {
                     scale = 1;
                   });
-                  print('OnPanEnd');
                 },
           onTap: _isLoading
               ? null
