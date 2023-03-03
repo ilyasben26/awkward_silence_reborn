@@ -1,15 +1,15 @@
-# awkward_silence_reborn
+# Awkward Silence
 
-A new Flutter project.
+Have you ever felt the deafening sound of an awkward silence?
+This app will give you fun and interesting questions that will liven up the conversation in no time!
 
-## Getting Started
+## What I learnt from making this app:
+- Using provider package for state-management
+- Parsing JSON files into Dart objects
+- Controlling animations
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Getting Started with Flutter
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
