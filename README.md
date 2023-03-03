@@ -1,5 +1,5 @@
+![Alt Text](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWU5ZTQ3ZDc3ZWMxMGY5ODYyNDA0NTY2MWJhNWYwMzYzYjQ4NDdkNCZjdD1n/DZKZinllGF1Le4sMRc/giphy.gif)
 # Awkward Silence
-
 Have you ever felt the deafening sound of an awkward silence?
 This app will give you fun and interesting questions that will liven up the conversation in no time!
 
