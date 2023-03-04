@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       create: (context) => Prompts(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Awkward Silence',
         theme: ThemeData(
           textTheme: const TextTheme(
               bodyMedium: TextStyle(color: Colors.white, fontSize: 50)),
